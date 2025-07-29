@@ -4,7 +4,6 @@ def solution(a, b, n):
     while n >= a:
         cokes = (n // a) * b
         answer += cokes
-        n = n % a
-        n += cokes
+        n = n % a + cokes
     
     return answer
